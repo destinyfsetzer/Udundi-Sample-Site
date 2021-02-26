@@ -1,57 +1,78 @@
 // sass variables
 $primary: #611818;
-$header-font: 'Playfair Display', serif;
+$header-font: "Playfair Display", serif;
 $white: #ffffff;
 $content-font: Arial, Helvetica, sans-serif;
 
 body {
-    background-image: url(../images/background.png);
-    .side-bar {
-        background-color: $primary;
-        height: 100vh;
-        width: 30%;
-        z-index: -1;
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-    }
+  background-image: url(../images/background.png);
+  .side-bar {
+    background-color: $primary;
+    height: 100vh;
+    width: 30%;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
 
 .main-title {
-    margin-top: 25%;
+  margin-top: 25%;
 }
 
 .plus-icon {
-    margin-left: 10%;
+  margin-left: 10%;
+}
+
+#initial-view {
+  display: block;
+}
+
+#more-details {
+  display: none;
 }
 
 h1 {
-    font-family: $header-font;
-    font-size: 11rem;
-    color: $white;
-    z-index: 9;
-    letter-spacing: 10px;
-    margin-left: 7%;
-    margin-bottom: 0px;
-    animation-duration: 4s;
-    animation-name: bounceIn;
+  font-family: $header-font;
+  font-size: 11rem;
+  color: $white;
+  z-index: 9;
+  letter-spacing: 10px;
+  margin-left: 7%;
+  margin-bottom: 0px;
+  animation-duration: 4s;
+  animation-name: bounceIn;
+}
+
+.close-btn {
+  color: $primary;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
 }
 
 .read-more-btn {
-  background-image: linear-gradient(to right, $primary, #A16451 98%);
+  background-image: linear-gradient(to right, $primary, #a16451 98%);
   color: $white;
   letter-spacing: 1px;
   padding: 10px 40px;
   border: none;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .card {
-  width: 30rem;
-  height: 35rem;
-  margin: 5rem;
-  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 45%;
+  margin-top: 5rem;
+  padding: 0px 10px 10px 20px;
 }
 
 h4 {
@@ -62,27 +83,30 @@ h4 {
 }
 
 h5 {
-    color: $white;
-    margin: 10px;
-    padding-left: 4px;
-    font-family: $content-font;
+  color: $white;
+  margin: 10px;
+  padding-left: 4px;
+  font-family: $content-font;
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.7rem;
   margin: 20px 0 40px 0;
+  line-height: 25px;
 }
 
 footer {
-    position:relative;
-    bottom:0;
-    right:0;
-    .social-icons {
-        width: 68px;
-        height: 68px;
-        display: flex;
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.social-icons {
+  width: 68px;
+  height: 68px;
 }
 
 @keyframes bounceIn {

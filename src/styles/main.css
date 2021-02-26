@@ -8,9 +8,9 @@ body .side-bar {
   width: 30%;
   z-index: -1;
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .main-title {
@@ -19,6 +19,14 @@ body .side-bar {
 
 .plus-icon {
   margin-left: 10%;
+}
+
+#initial-view {
+  display: block;
+}
+
+#more-details {
+  display: none;
 }
 
 h1 {
@@ -35,21 +43,38 @@ h1 {
           animation-name: bounceIn;
 }
 
+.close-btn {
+  color: #611818;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
 .read-more-btn {
-  background-image: -webkit-gradient(linear, left top, right top, from(#611818), color-stop(98%, #A16451));
-  background-image: linear-gradient(to right, #611818, #A16451 98%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#611818), color-stop(98%, #a16451));
+  background-image: linear-gradient(to right, #611818, #a16451 98%);
   color: #ffffff;
   letter-spacing: 1px;
   padding: 10px 40px;
   border: none;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .card {
-  width: 30rem;
-  height: 35rem;
-  margin: 5rem;
-  padding: 3%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 45%;
+  margin-top: 5rem;
+  padding: 0px 10px 10px 20px;
 }
 
 h4 {
@@ -67,19 +92,12 @@ h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.7rem;
   margin: 20px 0 40px 0;
+  line-height: 25px;
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  right: 0;
-}
-
-footer .social-icons {
-  width: 68px;
-  height: 68px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,6 +105,15 @@ footer .social-icons {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.social-icons {
+  width: 68px;
+  height: 68px;
 }
 
 @-webkit-keyframes bounceIn {
