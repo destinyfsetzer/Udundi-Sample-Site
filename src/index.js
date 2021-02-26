@@ -1,3 +1,4 @@
+// toggles close button
 const toggleClose = () => {
   let close = document.getElementById("initial-view");
   if (close.style.display === "none") {
@@ -7,11 +8,13 @@ const toggleClose = () => {
   }
 };
 
+// toggles between views
 const plusHandler = () => {
   toggleClose();
   toggleDetails();
 };
 
+// toggles more details button
 const toggleDetails = () => {
   let moreDetails = document.getElementById("more-details");
   if (moreDetails.style.display === "block") {

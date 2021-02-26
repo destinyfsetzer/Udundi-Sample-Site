@@ -1,9 +1,10 @@
-// sass variables
+// Sass variables // Styles
 $primary: #611818;
 $header-font: "Playfair Display", serif;
 $white: #ffffff;
 $content-font: Arial, Helvetica, sans-serif;
 
+// Main Content Card and Title
 body {
   background-image: url(../images/background.png);
   .side-bar {
@@ -22,16 +23,54 @@ body {
   margin-top: 25%;
 }
 
-.plus-icon {
-  margin-left: 10%;
-}
-
+// For JavaScript Toggle Section
 #initial-view {
   display: block;
 }
 
 #more-details {
   display: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 45%;
+  margin-top: 8rem;
+  padding: 20px 10px 10px 20px;
+  animation-duration: 2s;
+  animation-name: fadeInDown;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+// Text Styling
+
+h4 {
+  font-family: $header-font;
+  color: $primary;
+  letter-spacing: 2px;
+  font-size: 66px;
+}
+
+h5 {
+  color: $white;
+  margin: 10px;
+  padding-left: 4px;
+  font-family: $content-font;
+}
+
+p {
+  font-size: 0.7rem;
+  margin: 20px 0 40px 0;
+  line-height: 25px;
 }
 
 h1 {
@@ -45,6 +84,8 @@ h1 {
   animation-duration: 2s;
   animation-name: bounceIn;
 }
+
+// Icons and Buttons
 
 .close-btn {
   color: $primary;
@@ -95,48 +136,13 @@ h1 {
   right: 0;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 45%;
-  margin-top: 8rem;
-  padding: 20px 10px 10px 20px;
-  animation-duration: 2s;
-  animation-name: fadeInDown;
-}
-
-h4 {
-  font-family: $header-font;
-  color: $primary;
-  letter-spacing: 2px;
-  font-size: 66px;
-}
-
-h5 {
-  color: $white;
-  margin: 10px;
-  padding-left: 4px;
-  font-family: $content-font;
-}
-
-p {
-  font-size: 0.7rem;
-  margin: 20px 0 40px 0;
-  line-height: 25px;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1;
-}
-
 .social-icons {
   width: 68px;
   height: 68px;
+}
+
+.plus-icon {
+  margin-left: 10%;
 }
 
 @keyframes bounceIn {
