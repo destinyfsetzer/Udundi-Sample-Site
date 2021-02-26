@@ -7,26 +7,35 @@
     <title>Explore</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Fonts and Icons-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/_main.sass" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
 </head>
 
 <body>
-    <main>
-        <!-- Initial View -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="column">
-                    <h1>Explore</h1>
-                    <button id="details-btn">+</button>
-                    <p>more details</p>
-                </div>
-                <!-- More Details View -->
-                <!-- <div id="more-details">
-                    <h1>Explore</h1>
+    <!-- Maroon Side Bar -->
+    <div class="side-bar"></div>
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <!-- Initial View -->
+            <!-- <h1 class="main-title animate__animated animate__bounce">Explore</h1>
+            <div class="d-flex flex-row">
+                <svg type="button" class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="43" height="43"
+                    fill="white" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg>
+                <h5>More Details</h5>
+            </div> -->
+            <!-- More Details View -->
+            <div id="more-details" class="card">
+                <div class="card-body">
+                    <h4>Explore</h4>
                     <img src="images/Path.png">
                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                         totam
@@ -49,15 +58,15 @@
                         veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
                         commodi
                         consequatur?</p>
-                    <button class="close-btn">READ MORE</button>
-                </div> -->
+                    <button type="button" class="read-more-btn">READ MORE</button>
+                </div>
             </div>
-        </div>
+    </div>
     </main>
-    <footer class="social-icons">
-        <img src="images/facebook.png">
-        <img src="images/Instagram.png">
-    </footer>
+    <!-- <footer class="social-icons">
+        <img src="images/facebook.png" alt="facebook icon">
+        <img src="images/instagram.png" alt="instagram icon">
+    </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
