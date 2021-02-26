@@ -23,15 +23,6 @@ body {
   margin-top: 25%;
 }
 
-// For JavaScript Toggle Section
-#initial-view {
-  display: block;
-}
-
-#more-details {
-  display: none;
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -49,6 +40,15 @@ footer {
   bottom: 20px;
   right: 20px;
   z-index: 1;
+}
+
+// For JavaScript Toggle Section
+#initial-view {
+  display: block;
+}
+
+#more-details {
+  display: none;
 }
 
 // Text Styling
